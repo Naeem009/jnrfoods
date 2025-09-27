@@ -15,7 +15,6 @@ export default function ProductsPage() {
 }
 
 function ClientGrid() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { products, isLoading } = useProducts();
   return (
     <div className="mt-6">

@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import fs from "node:fs";
 import path from "node:path";
 import { Metadata } from "next";
-import { useCartStore } from "../../../stores/cart";
 import { Suspense } from "react";
 import type { Product } from "../../../types/product";
 
@@ -15,8 +14,9 @@ export async function generateStaticParams() {
   return products.map((p) => ({ slug: p.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const product = await getProduct(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const product = await getProduct(slug);
   if (!product) return {};
   const url = `https://jnrfoods.com/products/${product.slug}`;
   return {
@@ -41,8 +41,9 @@ async function getProduct(slug: string): Promise<Product | null> {
   return products.find((p) => p.slug === slug) || null;
 }
 
-export default async function ProductDetail({ params }: { params: { slug: string } }) {
-  const product = await getProduct(params.slug);
+export default async function ProductDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const product = await getProduct(slug);
   if (!product) return notFound();
   const jsonLd = {
     "@context": "https://schema.org/",

@@ -31,7 +31,7 @@ export default function Home() {
 
           {/* Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featured.map((product, index) => (
+            {featured.map((product) => (
               <div 
                 key={product.id} 
                 className="group relative bg-white rounded-2xl shadow-modern overflow-hidden hover:scale-105 transition-all duration-500 hover:shadow-glow"
@@ -74,7 +74,7 @@ export default function Home() {
                       Stock: {product.stock} units
                     </span>
                     <div className="flex items-center space-x-1">
-                      {product.tags.slice(0, 2).map((tag, tagIndex) => (
+                      {(product.tags || []).slice(0, 2).map((tag, tagIndex) => (
                         <span 
                           key={tagIndex}
                           className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-montserrat"

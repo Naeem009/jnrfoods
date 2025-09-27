@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       description: product.description,
       url,
       images: product.images?.map((u) => ({ url: u, width: 800, height: 600, alt: product.title })) || [],
-      type: "product",
+      type: "website",
     },
     twitter: { card: "summary_large_image", title: product.title, description: product.description, images: product.images?.[0] ? [product.images[0]] : [] },
   };
@@ -65,7 +65,6 @@ export default async function ProductDetail({ params }: { params: { slug: string
         <p className="mt-4 text-xl font-bold">{new Intl.NumberFormat(undefined, { style: 'currency', currency: product.currency || 'PKR' }).format(product.price)}</p>
         <Suspense>
           {/* Client island for add to cart */}
-          {/* @ts-expect-error Server Component boundary */}
           <AddToCart product={product} />
         </Suspense>
       </div>

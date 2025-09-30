@@ -6,6 +6,7 @@ import path from "node:path";
 import { Metadata } from "next";
 import { Suspense } from "react";
 import type { Product } from "../../../types/product";
+import AddToCart from "../../../components/AddToCart";
 
 export async function generateStaticParams() {
   const file = path.join(process.cwd(), "public", "products.json");
@@ -73,17 +74,17 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
   );
 }
 
-function AddToCart({ product }: { product: Product }) {
+//function AddToCart({ product }: { product: Product }) {
   // This component is intentionally not "use client" but relies on store in a boundary; keep simple by direct button linking to cart
-  const add = (product: Product) => {
+  //const add = (product: Product) => {
     // dynamic import to avoid SSR mismatch
-    import("../../../stores/cart").then((m) => m.useCartStore.getState().addItem(product, 1));
-  };
-  return (
-    <button onClick={() => add(product)} className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-md bg-accent text-white hover:opacity-90">
-      Add to cart
-    </button>
-  );
-}
+    //import("../../../stores/cart").then((m) => m.useCartStore.getState().addItem(product, 1));
+  //};
+  //return (
+//    <button onClick={() => add(product)} className="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-md bg-accent text-white hover:opacity-90">
+      //Add to cart
+    //</button>
+  //);
+//}
 
 

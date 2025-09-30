@@ -81,22 +81,22 @@ export default function HeroSlider() {
             aria-hidden={i !== index}
           >
             <Image 
-            src={slide.src} 
-            alt={slide.alt} 
-            fill 
-            className="object-contain w-full h-full" 
-            priority={i === 0} 
-            sizes="100vw"
-            quality={90}
+              src={slide.src} 
+              alt={slide.alt} 
+              fill 
+              className="object-cover object-right" 
+              priority={i === 0} 
+              sizes="100vw"
+              quality={90}
             />
           
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
           
           {/* Content overlay */}
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-6">
-              <div className="max-w-2xl">
+              <div className="max-w-2xl text-left">
                 <div className="animate-fade-in">
                   <h1 className="font-montserrat font-bold text-5xl md:text-7xl text-white mb-4 leading-tight">
                     {slide.title}

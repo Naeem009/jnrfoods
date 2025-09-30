@@ -88,14 +88,13 @@ export default function Home() {
                   {/* Action Button */}
                   <Link 
                     href={`/products/${product.slug}`}
-                    className="block w-full bg-gradient-to-r from-accent to-orange-dark text-white font-montserrat font-semibold py-3 px-4 rounded-xl text-center hover:shadow-glow hover:scale-105 transition-all duration-300 group-hover:from-orange-dark group-hover:to-accent"
-                  >
+                    className="block w-full bg-blue-900 text-white font-montserrat font-semibold py-3 px-4 rounded-xl text-center hover:shadow-glow hover:scale-105 transition-all duration-300 group-hover:from-orange-dark group-hover:to-accent">
                     View Product
                   </Link>
                 </div>
 
                 {/* Hover effect overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-orange-dark/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute inset-0 from-accent/10 to-orange-dark/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </div>
             ))}
           </div>
@@ -104,11 +103,11 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link 
               href="/products"
-              className="inline-flex items-center space-x-2 bg-primary text-white font-montserrat font-semibold px-8 py-4 rounded-xl hover:bg-secondary hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center space-x-2 bg-gray-700 text-white font-montserrat font-semibold px-8 py-4 rounded-xl shadow-md hover:bg-gray-900 hover:scale-105 transition-all duration-300"
             >
               <span>View All Products</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
               </svg>
             </Link>
           </div>

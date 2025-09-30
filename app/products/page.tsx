@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 export default function ProductsPage() {
   return (
-    <section className="container py-8">
+    <section className="container py-8 ml-6">
       <h1 className="text-2xl font-semibold">Products</h1>
       <ProductGrid />
     </section>

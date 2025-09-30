@@ -1,16 +1,16 @@
 [
   {
     "id": "1a2b3c4d-0001-0000-0000-000000000001",
-    "title": "Classic Basmati Rice 5kg",
-    "slug": "classic-basmati-rice-5kg",
-    "description": "Premium-aged basmati rice with long grains and rich aroma. Perfect for biryani and pilaf.",
+    "title": "Chocolate Chip 1kg",
+    "slug": "classic-chocolate-chip-4kg",
+    "description": "Classic Grade Chocolate Chips Used in Cookies, Cup Cakes and other decorations.",
     "price": 1499,
     "currency": "PKR",
-    "images": ["/products/1.jpg", "/products/1b.jpg"],
-    "category": "Grains",
-    "stock": 120,
+    "images": ["/products/chocochips.png", "/products/chocochipsb.png"],
+    "category": "Chocolate",
+    "stock": 150,
     "featured": true,
-    "tags": ["rice", "basmati", "grains"],
+    "tags": ["chocolate", "chips", "bakery", "cakes", "cup_cakes"],
     "createdAt": "2025-01-01T00:00:00.000Z",
     "updatedAt": "2025-01-01T00:00:00.000Z"
   },

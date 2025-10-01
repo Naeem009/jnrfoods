@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     default: "JNR Foods | Quality Cake Toppings",
   },
   description: "Shop premium baking essentials. Fresh, quality products delivered.",
-  icons: {
-    icon: "/jnrfavicon.png",
-    shortcut: "/jnrfavicon.png",
-    apple: "/jnrfavicon.png",
-  },
+    icons: {
+      icon: "/jnr.ico",
+      shortcut: "/jnr.ico",
+      apple: "/jnr.png",
+    },
   metadataBase: new URL("https://jnrfoods.com"),
   openGraph: {
     title: "JNR Foods (Pvt) Limited",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "JNR Foods (Pvt) Limited",
     description: "Shop premium cake toppings.",
-    images: ["/1.jpg"],
+    images: ["/jnr.png"], // also updated for Twitter
   },
   robots: { index: true, follow: true },
 };

@@ -56,7 +56,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
     offers: { "@type": "Offer", priceCurrency: product.currency || "PKR", price: String(product.price), availability: "http://schema.org/InStock" },
   };
   return (
-    <section className="container py-8 grid gap-8 lg:grid-cols-2">
+    <section className="container py-8 grid gap-8 lg:grid-cols-2 pl-4">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="relative aspect-[4/3] rounded-xl overflow-hidden border bg-white">
         <Image src={product.images?.[0] || "/products/1.jpg"} alt={product.title} fill className="object-cover" />

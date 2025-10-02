@@ -20,12 +20,14 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="border rounded-xl p-4 shadow hover:shadow-lg transition">
       {/* Fixed Image Container */}
-      <div className="relative w-full h-48 flex items-center justify-center bg-gray-50 rounded-lg">
+      <div className="relative w-full h-80 flex items-center justify-center bg-gray-50 rounded-lg">
         <Image
           src={product.images?.[0] || "/placeholder.png"}
           alt={product.title}
-          fill
-          className="object-contain p-2"
+          width={300}
+          height={400}
+          //fill
+          className="object-cover p-1"
         />
       </div>
 

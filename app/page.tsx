@@ -113,6 +113,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="w-full bg-gradient-to-br from-gray-50 to-gray-100 py-16">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="font-montserrat font-bold text-4xl md:text-5xl text-primary mb-4">
+              Our Production Process
+            </h2>
+            <p className="font-montserrat text-m text-gray-600 max-w-2xl mx-auto">
+              We take pride in our production process and ensure that every product is made with the highest quality ingredients. Quality is ensured
+              to make ervytime feel the same as fisrt. <br/>
+              All products Hilal Certified and authentic.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   description: "Shop premium baking essentials. Fresh, quality products delivered.",
     icons: {
-      icon: "/jnr.ico",
-      shortcut: "/jnr.ico",
-      apple: "/jnr.png",
+      icon: "/favicon.ico",
+      shortcut: "/favicon.ico",
+      apple: "/favicon.ico",
     },
   metadataBase: new URL("https://jnrfoods.com"),
   openGraph: {

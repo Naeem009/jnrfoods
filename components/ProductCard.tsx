@@ -19,14 +19,16 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className="border rounded-xl p-4 shadow hover:shadow-lg transition">
-      <div className="relative w-full h-48">
+      {/* Fixed Image Container */}
+      <div className="relative w-full h-48 flex items-center justify-center bg-gray-50 rounded-lg">
         <Image
           src={product.images?.[0] || "/placeholder.png"}
           alt={product.title}
           fill
-          className="object-cover rounded-lg"
+          className="object-contain p-2"
         />
       </div>
+
       <h2 className="mt-2 text-lg font-semibold">{product.title}</h2>
       <p className="text-gray-600">
         {new Intl.NumberFormat(undefined, {

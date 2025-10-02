@@ -98,7 +98,7 @@ export default function HeroSlider() {
             <div className="container mx-auto px-6">
               <div className="max-w-2xl text-left">
                 <div className="animate-fade-in">
-                  <h1 className="font-montserrat font-bold text-5xl md:text-7xl text-white mb-4 leading-tight">
+                  <h1 className="font-montserrat font-bold text-5xl md:text-7xl text-gray-300 mb-4 leading-tight">
                     {slide.title}
                   </h1>
                   <p className="font-montserrat text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">

@@ -59,7 +59,7 @@ export default async function ProductDetail({ params }: { params: Promise<{ slug
     <section className="container py-8 grid gap-8 lg:grid-cols-2 pl-4">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="relative aspect-[4/3] rounded-xl overflow-hidden border bg-white">
-        <Image src={product.images?.[0] || "/products/1.jpg"} alt={product.title} fill className="object-cover" />
+        <Image src={product.images?.[0] || "/products/1.jpg"} alt={product.title} fill className="object-fit" />
       </div>
       <div>
         <h1 className="text-2xl font-semibold">{product.title}</h1>

@@ -78,19 +78,19 @@ export default function ContactUs() {
           <div className="bg-white p-8 rounded-2xl shadow-md">
             <h2 className="text-2xl font-semibold mb-4">Contact Details</h2>
             <p className="mb-2">
-              <strong>Address:</strong> 13A Bahawalpur Road, Chauburji, Lahore, Pakistan
+              <strong>Address:</strong> <br/>13A Bahawalpur Road, Chauburji, Lahore, Pakistan
             </p>
             <p className="mb-2">
               <strong>Phone:</strong> <br/> +92 327 111 1460 <br/>+92 327 111 1461
             </p>
             <p>
-              <strong>Email:</strong> info@jnrfoods.com
+              <strong>Email:</strong> <br/>info@jnrfoods.com
             </p>
           </div>
 
           <div className="rounded-2xl overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217613.1442617687!2d74.19917555831915!3d31.52036955502072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483a96e5e19%3A0x3d1b6edc2d93a9cf!2sLahore!5e0!3m2!1sen!2s!4v1704387723627!5m2!1sen!2s"
+              src="https://www.google.com/maps/place/31%C2%B033'07.1%22N+74%C2%B018'27.0%22E/@31.5519661,74.3068603,303m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d31.551965!4d74.307504?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
               width="100%"
               height="350"
               style={{ border: 0 }}

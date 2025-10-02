@@ -9,14 +9,20 @@ export default function Footer() {
         
         {/* Company Info */}
         <div>
-          <h3 className="text-lg font-bold">JNR Foods (Pvt) Limited</h3>
+          <h3 className="text-lg font-bold"><strong>JNR Foods (Pvt) Limited</strong></h3>
           <p className="mt-2 text-gray-200">
             Quality Cake Toppings & Bakery Essentials.
+          </p>
+          <p className="mt-2 text-gray-200">
+            13A Bahawalpur Road, Chauburji, <br/> Lahore, Pakistan.
           </p>
         </div>
 
         {/* Footer Nav */}
         <nav className="flex flex-col gap-2" aria-label="Footer">
+        <Link className="hover:text-yellow-300 transition-colors" href="/">
+            Home
+          </Link>
           <Link className="hover:text-yellow-300 transition-colors" href="/products">
             Products
           </Link>
@@ -32,7 +38,7 @@ export default function Footer() {
         <div className="flex flex-col gap-3">
           <p>© {new Date().getFullYear()} JNR Foods. All rights reserved.</p>
           <p className="text-xs text-gray-300">
-            Developed by JNR Foods IT Team
+            Developed by: Team, JNR Foods (Pvt) Ltd.
           </p>
           <div className="flex gap-4 mt-2">
             <Link href="#" aria-label="Facebook">

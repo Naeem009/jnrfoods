@@ -17,7 +17,6 @@ export default function ContactUs() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Add API call or email integration here
     alert("Message submitted successfully!");
     setFormData({ name: "", email: "", message: "" });
   };
@@ -78,19 +77,23 @@ export default function ContactUs() {
           <div className="bg-white p-8 rounded-2xl shadow-md">
             <h2 className="text-2xl font-semibold mb-4">Contact Details</h2>
             <p className="mb-2">
-              <strong>Address:</strong> <br/>13A Bahawalpur Road, Chauburji, Lahore, Pakistan
+              <strong>Address:</strong> <br />13A Bahawalpur Road, Chauburji,
+              Lahore, Pakistan
             </p>
             <p className="mb-2">
-              <strong>Phone:</strong> <br/> +92 327 111 1460 <br/>+92 327 111 1461
+              <strong>Phone:</strong> <br /> +92 327 111 1460 <br />+92 327 111
+              1461
             </p>
             <p>
-              <strong>Email:</strong> <br/>info@jnrfoods.com
+              <strong>Email:</strong> <br />
+              info@jnrfoods.com
             </p>
           </div>
 
+          {/* Correct Embed Map */}
           <div className="rounded-2xl overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/place/31%C2%B033'07.1%22N+74%C2%B018'27.0%22E/@31.5519661,74.3068603,303m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d31.551965!4d74.307504?entry=ttu&g_ep=EgoyMDI1MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d652.9929344321249!2d74.30739199999998!3d31.55188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDMzJzA2LjgiTiA3NMKwMTgnMjYuNiJF!5e1!3m2!1sen!2s!4v1759489579087!5m2!1sen!2s"
               width="100%"
               height="350"
               style={{ border: 0 }}

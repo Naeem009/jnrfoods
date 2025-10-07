@@ -16,6 +16,10 @@ export default function Footer() {
           <p className="mt-2 text-gray-200">
             13A Bahawalpur Road, Chauburji, <br/> Lahore, Pakistan.
           </p>
+          <p className="mt-2 text-gray-200">
+            Contacts <br/> +92 327 111 1460 <br/> +92 327 111 1461 <br/>
+            info@jnrfoods.com
+          </p>
         </div>
 
         {/* Footer Nav */}
